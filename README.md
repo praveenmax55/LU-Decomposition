@@ -36,13 +36,7 @@ P,L,U=lu(a)
 print(L)
 print(U)
 
-```python
-'''Program to solve a matrix using LU decomposition.
-Developed by: PRAVEEN D
-RegisterNumber: 22005917
-'''
-
-# To print X matrix (solution to the equations)
+# To find LU Decomposition of a matrix
 import numpy as np
 from scipy.linalg import lu_factor,lu_solve
 a=eval(input())
@@ -50,17 +44,7 @@ b=eval(input())
 lu,piv=lu_factor(a)
 x=lu_solve((lu,piv),b)
 print(x)
-```
 
-# To print X matrix (solution to the equations)
-```python
-import numpy as np
-from scipy.linalg import lu_factor,lu_solve
-a=eval(input())
-b=eval(input())
-lu,piv=lu_factor(a)
-x=lu_solve((lu,piv),b)
-print(x)
 ```
 ## Output:
 ![lu decomposition](output7.png)
